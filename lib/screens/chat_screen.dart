@@ -52,10 +52,10 @@ class _ChatScreenState extends State<ChatScreen> {
         });
 
         return Scaffold(
-          appBar: AppBar(
+          appBar: AppBar(automaticallyImplyLeading: false,
             backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
             centerTitle: true,
-            title: const Text('Chat with chat mate'),
+            title: const Text('Chat with Ai'),
             actions: [
               if (chatProvider.inChatMessages.isNotEmpty)
                 Padding(

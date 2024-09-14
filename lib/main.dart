@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gemini_we_final_project/providers/chat_provider.dart';
 import 'package:flutter_gemini_we_final_project/providers/setting_provider.dart';
 import 'package:flutter_gemini_we_final_project/screens/home_screen.dart';
+import 'package:flutter_gemini_we_final_project/screens/splash_screen_view.dart';
 import 'package:flutter_gemini_we_final_project/themes/my_theme.dart';
 import 'package:provider/provider.dart';
 
@@ -44,7 +45,8 @@ class _MyAppState extends State<MyApp> {
       theme:
       context.watch<SettingsProvider>().isDarkMode ? darkTheme : lightTheme,
       debugShowCheckedModeBanner: false,
-      home: const HomeScreen(),
+     // home: const HomeScreen(),
+      home: const SplashScreenView(),
     );
   }
 }

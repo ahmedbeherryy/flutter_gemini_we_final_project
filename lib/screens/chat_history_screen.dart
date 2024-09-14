@@ -17,7 +17,7 @@ class _ChatHistoryScreenState extends State<ChatHistoryScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
+        appBar: AppBar(automaticallyImplyLeading: false,
           backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
           centerTitle: true,
           title: const Text('Chat history'),

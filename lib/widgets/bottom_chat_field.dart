@@ -48,7 +48,7 @@ class _BottomChatFieldState extends State<BottomChatField> {
       log('error : $e');
     } finally {
       textController.clear();
-      //  widget.chatProvider.setImagesFileList(listValue: []);
+        widget.chatProvider.setImagesFileList(listValue: []);
       textFieldFocus.unfocus();
     }
   }
